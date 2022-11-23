@@ -1,0 +1,3 @@
+Saludos, el motor de plantillas con el que me senti mas comodo es Handlebars, estaba entre este y Ejs pero la sintaxis de Ejs con los <% me parecio mas trabajosa que la de Handlebars, por ende fue el ganador.
+
+Pug tambien es un buen motor, pero su sintaxis para escribir html me parecio la mas complicada, no por si complejidad sino por tener que estar adaptando el html al formato de Pug siendo que handlebars y ejs usan sintaxis de html5.

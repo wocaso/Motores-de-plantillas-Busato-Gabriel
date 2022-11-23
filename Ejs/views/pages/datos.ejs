@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head')%>
+</head>
+<body>
+    <h1>Productos</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Precio</th>
+      <th scope="col">illustracion</th>
+    </tr>
+  </thead>
+  <tbody >
+    <% for(const producto of productos){%>
+    <tr>
+      <td><%= producto.tittle %></td>
+      <td><%= producto.price %></td>
+      <td><img src=<%=producto.thumbnail %> style="height: 40px;"/></td>    
+    </tr>
+    <% } %>
+
+
+</table>
+<button onclick="window.location.href='http://localhost:8080/'" class="btn btn-primary">Agregar nuevo producto</button>
+</body>
+</html>

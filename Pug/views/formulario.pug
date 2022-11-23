@@ -1,0 +1,16 @@
+extends layout
+
+block formulario
+        h1(class="mx-4 mt-3")="Agregue su producto"
+        form(action="/Productos" method="post" class="mx-4 mt-3")
+            div(class="mb-3")
+                label(for="tittleInput" class="form-label")="Nombre"
+                input(type="text" class="form-control" id="tittleInput" aria-describedby="emailHelp" name="tittle")
+            div(class="mb-3")
+                label(for="priceInput" class="form-label")="Precio"
+                input(type="number" class="form-control" id="priceInput" aria-describedby="emailHelp" name="price")
+            div(class="mb-3")
+                label(for="thumbnailInput" class="form-label")="Url imagen"
+                input(type="text" class="form-control" id="thumbnailInput" aria-describedby="emailHelp" name="thumbnail")
+            button(type="submit" class="btn btn-primary")="Agregar producto"
+        button(onclick="window.location.href='http://localhost:8080/productos'" class="btn btn-primary mt-2 mx-4")="ver lista de productos</button"

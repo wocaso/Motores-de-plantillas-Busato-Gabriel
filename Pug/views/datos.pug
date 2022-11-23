@@ -1,0 +1,20 @@
+extends layout
+
+block datos
+        h1="Productos"
+        table(class="table table-striped")
+                thead
+                        tr
+                                th(scope="col")="Nombre"
+                                th(scope="col")="Precio"
+                                th(scope="col")="Illustracion"
+                tbody
+                each producto in productos
+                        tr
+                                td=producto.tittle
+                                td=producto.price
+                                td
+                                        img(src=producto.thumbnail style="height: 40px;")
+        button(onclick="window.location.href='http://localhost:8080/'" class="btn btn-primary")="Agregar nuevo producto"
+                                
+
